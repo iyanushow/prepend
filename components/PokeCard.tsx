@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { IPokemonDetails } from "../interfaces";
 
-const PokeCard = ({ id, imageUrl, name, types }: IPokemonDetails) => {
+const PokeCard = ({ id, imageUrl = "", name, types }: IPokemonDetails) => {
   // convert pokemon types to string for display
   const pokemonTypes = types.map(pokeType => pokeType.type.name).join(",");
 

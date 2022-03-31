@@ -7,7 +7,7 @@ export interface IPokemonDetails {
   id: number;
   url: string;
   name: string;
-  imageUrl: string;
+  imageUrl: string | null;
   weight: number;
   height: number;
   stats: PokeStat[];
