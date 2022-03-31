@@ -1,12 +1,9 @@
+import { SWRConfig } from "swr";
 import { GetStaticProps } from "next";
-import useSWR, { SWRConfig } from "swr";
 import Layout from "../../components/Layout";
+import Pokemons from "../../components/Pokemons";
 import { baseUrl, fetchPokemonList } from "../../utils";
 import { IPokemonList, IPokemonDetails } from "../../interfaces";
-import PokeCard from "../../components/PokeCard";
-import { useState } from "react";
-import Pagination from "../../components/Pagination";
-import Pokemons from "../../components/Pokemons";
 
 interface PageTypes extends IPokemonList {
   fallback: {

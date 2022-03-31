@@ -1,10 +1,9 @@
-import { GetStaticProps, GetStaticPaths } from "next";
-
-import { IPokemonDetails, IResults } from "../../interfaces";
-import Layout from "../../components/Layout";
-import { baseUrl, fetchPokemonData } from "../../utils";
 import Image from "next/image";
 import Pill from "../../components/Pill";
+import Layout from "../../components/Layout";
+import { GetStaticProps, GetStaticPaths } from "next";
+import { baseUrl, fetchPokemonData } from "../../utils";
+import { IPokemonDetails, IResults } from "../../interfaces";
 
 type SingleType = {
   pokemon: IPokemonDetails;

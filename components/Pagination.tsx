@@ -1,5 +1,4 @@
 import React from "react";
-import { IPokemonDetails } from "../interfaces";
 
 type PaginationProps = {
   className?: string;
@@ -12,7 +11,7 @@ type PaginationProps = {
 };
 
 const Pagination = ({ variables, changePage }: PaginationProps) => {
-  const { count, next, previous } = variables;
+  const { next, previous } = variables;
   console.log(next, previous);
 
   return (
