@@ -45,6 +45,10 @@ yarn dev
 
 Project satisfies the project requirements and user stories as mentioned below:
 
+### Create PR for main codebase
+
+The major codebase exists on the dev branch and a Pull Request was made to the main branch as requested
+
 ### List All Pokemons
 
 This lists all the pokemons in root page of application with their name and image
