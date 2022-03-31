@@ -27,9 +27,13 @@ const SinglePokemon = ({ pokemon }: SingleType) => {
         <div className="w-full max-w-7xl mx-auto py-10"></div>
         <h1 className="text-center text-gray-900 text-5xl uppercase underline">{name}</h1>
 
-        <figure className="w-48 mx-auto my-5">
-          <Image src={imageUrl} layout="fixed" width={240} height={120} alt={name} />
-        </figure>
+        {imageUrl ? (
+          <figure className="w-48 mx-auto my-5">
+            <Image src={imageUrl} layout="fixed" width={240} height={120} alt={name} />
+          </figure>
+        ) : (
+          <p className="text-3xl uppercase italic">No Image Found</p>
+        )}
 
         <div className="my-2.5 py-5 px-5">
           <h2 className="uppercase text-center text-2xl font-semibold border border-slate-50 py-2.5 px-2.5">
