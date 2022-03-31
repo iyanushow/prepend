@@ -12,7 +12,6 @@ type PaginationProps = {
 
 const Pagination = ({ variables, changePage }: PaginationProps) => {
   const { next, previous } = variables;
-  console.log(next, previous);
 
   return (
     <div className="px-4 py-3 my-5 flex items-center justify-between border-t border-gray-200 sm:px-6">
