@@ -1,41 +1,63 @@
-# TypeScript Next.js example
+# Prepend Assessment
 
-This is a really simple project that shows the usage of Next.js with TypeScript.
+Project submission for Prepend Application. Live Preview can be found at [Prepend App](https://iyanushow-lazerpay.netlify.app/)
 
-## Deploy your own
+## Project Summary
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-typescript)
+This submission is a Pokemon application that consumes the [Pokemon API](https://pokeapi.co) to provide basic browsing and discovering features for the user.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript&project-name=with-typescript&repository-name=with-typescript)
+### Technologies Used
 
-## How to use it?
+This project was built using:
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+- [Nextjs](https://nextjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+
+## Available Scripts
+
+To recreate this project:,
+
+- Clone the repository
+- CD into project folder
+- In project folder;
+
+### `yarn install`
+
+Run yarn install or npm install to downloads all required depencies and their correct versions.
 
 ```bash
-npx create-next-app --example with-typescript with-typescript-app
+yarn install
 # or
-yarn create next-app --example with-typescript with-typescript-app
+npm install
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+### `yarn dev`
 
-## Notes
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-This example shows how to integrate the TypeScript type system into Next.js. Since TypeScript is supported out of the box with Next.js, all we have to do is to install TypeScript.
-
-```
-npm install --save-dev typescript
-```
-
-To enable TypeScript's features, we install the type declarations for React and Node.
-
-```
-npm install --save-dev @types/react @types/react-dom @types/node
+```bash
+yarn dev
 ```
 
-When we run `next dev` the next time, Next.js will start looking for any `.ts` or `.tsx` files in our project and builds it. It even automatically creates a `tsconfig.json` file for our project with the recommended settings.
+## Features
 
-Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
+Project satisfies the project requirements and user stories as mentioned below:
 
-A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
+### List All Pokemons
+
+This lists all the pokemons in root page of application with their name and image
+
+### Show Details of Pokemon
+
+Each pokemon card has a button that links to its details page at [/pokemone/${name}]. This page shows various details about the selected pokemon
+
+### Pagination
+
+Implemented pagination for the listing page to improve user experience and avoid expensive overhead and data transfer
+
+### Text Search0
+
+Implemented a search bar to search through pokemons
+[//]: <> (Search funtionality is still work in progress.)
