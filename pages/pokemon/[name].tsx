@@ -32,7 +32,7 @@ const SinglePokemon = ({ pokemon }: SingleType) => {
             <Image src={imageUrl} layout="fixed" width={240} height={120} alt={name} />
           </figure>
         ) : (
-          <p className="text-3xl uppercase italic">No Image Found</p>
+          <p className="text-3xl uppercase italic text-center my-5 text-red-400">No Image Found</p>
         )}
 
         <div className="my-2.5 py-5 px-5">
