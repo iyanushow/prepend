@@ -34,7 +34,10 @@ const Pokemons = ({ pagination, initialUrl }: PokemonPage) => {
 
   return (
     <div className="w-full h-full max-w-7xl  mx-auto">
-      <Search className="pt-20" setQuery={value => setUrl(`${baseUrl}/value`)} />
+      <Search
+        className="pt-20 max-w-[60%] mx-auto"
+        setQuery={value => setUrl(`${baseUrl}/value`)}
+      />
       <div className="my-10 grid grid-cols-card gap-3 pt-5">
         {data.pokemons?.map(pokemon => (
           <PokeCard key={pokemon.id} {...pokemon} />
