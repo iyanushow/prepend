@@ -9,7 +9,7 @@ const PokeCard = ({ id, imageUrl = "", name, types }: IPokemonDetails) => {
 
   return (
     <div className="text-[#e4c439] p-4 text-center relative overflow-hidden transition-all duration-200 hover:scale-105 bg-gray-800 shadow-xl rounded-lg">
-      <span className="bg-main w-10 h-6 text-white absolute left-5 rounded">{`#${id}`}</span>
+      <span className="bg-main min-w-10 h-6 text-xs flex items-center px-1 text-white absolute left-5 rounded">{`#${id}`}</span>
 
       <figure className="w-auto mx-auto">
         <Image src={imageUrl} layout="fixed" width={120} height={120} alt={name} />
@@ -21,8 +21,8 @@ const PokeCard = ({ id, imageUrl = "", name, types }: IPokemonDetails) => {
 
       <Link href={`/pokemon/${name}`}>
         <a>
-          <button className="px-3 py-3 w-48 uppercase text-xs text-center rounded-3xl bg-gray-600 hover:bg-gray-700 my-2.5">
-            <span className="text-sm">Go {name}</span>
+          <button className="px-3 py-3 w-48 uppercase text-xs text-center rounded-3xl bg-gray-600 hover:bg-gray-700 my-5 flex justify-between mx-auto">
+            <span className="text-sm max-w-[20ch] line-clamp-1">Go {name}</span>
             {/* copied simple svg icon from tailwind */}
 
             <svg
